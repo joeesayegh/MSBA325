@@ -24,7 +24,7 @@ st.write('In this web app we have five different visualizations in which two of 
 #Plot
 st.title("Population of USA States in 2014")
 st.write("Below there's a table representing all the states, their postal, and their population.")
-df2 = pd.read_csv("/Users/eliesayegh/Library/Containers/com.microsoft.Excel/Data/Downloads/2014 US States Pop.csv")
+df2 = pd.read_csv("2014 US States Pop.csv")
 with st.expander("States Population Data"):
     st.write(df2)
 st.write("Under the table, we have a scatter plot in which you can select many different states and compare them to each other.")
