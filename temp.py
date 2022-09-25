@@ -12,7 +12,7 @@ from datetime import datetime
 
 
 
-
+st.title('Welcome to Joe El Sayeghs Data Visualization Page')
 st.title('Data Visualization & Communication')
 st.write('This is a web app to show visualizations made on plotly.')
 st.write('In this web app we have five different visualizations in which two of them have interactive features to make this experience fun!')
