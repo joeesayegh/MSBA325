@@ -42,7 +42,7 @@ st.plotly_chart(fig3)
 #New Plot
 st.title("USA Life Expectancy")
 st.write("Here, you can see a line graph representing the life expectancy of the United States of America throughout the year 1960 all the way to the year 2020.")
-df3= pd.read_csv("/Users/eliesayegh/Library/Containers/com.microsoft.Excel/Data/Downloads/usa_life_expectancy_-_temp.csv")
+df3= pd.read_csv("usa_life_expectancy_-_temp.csv")
 fig4 = px.line(df3, x= 'Years', y = 'Life Expectancy')
 fig4.update_layout(title='USA Life Expectancy');
 
@@ -54,7 +54,7 @@ st.plotly_chart(fig4)
 #New Plot
 st.title("S&P500 Candlestick Chart")
 st.write("Here, you can see a candlestick chart representing the S&P500 average throughout the years 2020 till present 2022.")
-df4 = pd.read_csv("/Users/eliesayegh/Library/Containers/com.microsoft.Excel/Data/Downloads/sp_-_Sheet1.csv")
+df4 = pd.read_csv("sp_-_Sheet1.csv")
 fig5 = go.Figure(data=[go.Candlestick(x=df4['Date'],
                 open=df4['Open'],
                 high=df4['High'],
@@ -71,7 +71,7 @@ st.plotly_chart(fig5)
 #New Plot
 st.title("Birds Dying Due to Building Window Collision")
 st.write("Here, you can see a pie chart representing the number of birds who died due to building window collision, in a specific area, throughout 4 months.")
-df = pd.read_csv("/Users/eliesayegh/Library/Containers/com.microsoft.Excel/Data/Downloads/bird-window-collision-death.csv")
+df = pd.read_csv("bird-window-collision-death.csv")
 fig = px.pie ( df , values = 'Deaths' , names = 'Bldg Name' , color = "Bldg Name")
 fig.update_traces ( textinfo = "label + percent", insidetextfont = dict(color = "white")) ;
 fig.update_layout ( legend = { "itemclick" : False } ) ;
